@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<mata charset="utf-8">
+    <title>誓不罢休</title>
+    <!--没办法谁让我反应慢呢一步步来吧-->    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration:none;
+        }
+        .main{
+            width: 800px;/*是为了整个网页只有800*/
+            margin: auto;/**/
+        }
+        .header,.nav,.container,.footer{
+            /*让盒子们向左浮动，相互挤压，不至于错位*/
+            float: left;
+            /*填满整个屏幕*/
+            width: 100%;
+            box-sizing: border-box;/*内边距影响盒子的大小，使用这个可以调整*/
+        }
+.header{
+    background:blueviolet;
+    padding: 20px;
+    text-align: center;
+
+}
+.nav{
+    background:#FFE4C4;
+}
+    .nav a{
+        color: #DC143C;
+        padding: 20px;
+        display: inline-block;
+    }
+    .nav a:hover{
+        background: #eee;
+        color: #006400;
+    }
+    .lside{
+        width: 300px;
+        font-size: large;
+        float: left;/*这是把左右栏分开*/
+    }
+    .rside{
+        width: 300px;
+        float: right;
+        font-size: large;
+    }
+    /*需要定义中间栏，不然中间栏的内容会向两边跑，因此需要设置左右两边的边距*/
+    .content{
+        margin: 0px 205px;
+        font-size: large;
+    }
+    .lside,.rside,.contet{
+        padding: 5px;
+        box-sizing: border-box;/*内边距影响盒子的大小，使用这个可以调整*/
+    }
+    .footer{
+        background: orange;
+        padding: 10px;
+        text-align: center;
+    }
+    /*有缩小的情况，当浏览宽度小于700时，三个内容栏会变成适配的竖排*/
+    @media screen and (max-width:700px) {
+        .lside,.rside,.content{
+            width:100%;
+            margin: 0px;
+        }
+        
+    }
+    </style>
+</head> 
+<body>
+    <div class="main">
+        <div class="header">
+<h1>欢迎来到丹丹公主的奇妙世界</h1>
+<p>情感大师，高贵公主，完美主义</p>
+        </div>    
+        <div class="nav">
+            <a href="aa">11</a>
+            <a href="aa">11</a>
+            <a href="aa">11</a>
+            <a href="aa">11</a>
+        </div>
+        <div class="container">
+        <div class="lside">
+            <h1>左栏</h1>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+        </div>
+        <div class="rside">
+                <h1>右栏</h1>
+                <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+                <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+                <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+                <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+                <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+                <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+                <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+        </div>
+        <div class="content">
+            <h1>中间栏</h1>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>
+            <p>左栏内容：爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间爱激荡在心间</p>  
+        </div>
+        </div>
+        <div class="footer">脚脚</div>
+        <p>底部主要会放版权信息，也许明年我会真正拥有一个属于我的网站，邮箱和信息方式</p>
+    </div>
+</body>
+</html>
